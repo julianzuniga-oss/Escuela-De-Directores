@@ -1,0 +1,16 @@
+{
+  "puntuacion": {
+    "sesion5_acierto": 100,
+    "sesion5_error": -10
+  },
+  "mensajes": {
+    "guardado_ok": "Actividad guardada correctamente.",
+    "guardado_error": "No fue posible guardar tu actividad. Revisa tu conexión e inténtalo nuevamente.",
+    "sesion_completada": "Has completado la sesión."
+  },
+  "textos_portada": {
+    "titulo": "Escuela de Directores",
+    "organizacion": "ANEIAP ICESI",
+    "subtitulo": "Formación, liderazgo y visión para quienes quieren transformar la asociación."
+  }
+}

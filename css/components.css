@@ -1,0 +1,104 @@
+/* ==========================================================================
+   Componentes: mapas de tarjetas, quiz ABCD, modales, formularios,
+   juego de emparejados, matriz de priorización, timeline
+   ========================================================================== */
+
+/* ---------- Mapa de tarjetas (Sesiones 1 y 2) ---------- */
+.mapa-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.mapa-columna { background: var(--gris-claro); border: 1px solid #e3e7ec; border-radius: var(--radio); padding: 14px; min-height: 180px; }
+.mapa-columna-titulo { font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.4px; color: var(--azul-institucional); margin-bottom: 10px; }
+.mapa-tarjetas { display: flex; flex-direction: column; gap: 10px; margin-bottom: 10px; }
+.mapa-tarjeta { background: var(--blanco); border: 1px solid #e3e7ec; border-radius: var(--radio); padding: 10px 12px; box-shadow: var(--sombra-suave); }
+.mapa-tarjeta-titulo { font-weight: 600; font-size: 0.92rem; color: var(--azul-oscuro); }
+.mapa-tarjeta-desc { font-size: 0.85rem; color: var(--gris-medio); margin: 4px 0 6px; }
+.mapa-tarjeta-acciones { display: flex; gap: 6px; flex-wrap: wrap; }
+.icon-btn { background: none; border: 1px solid #dfe4ea; border-radius: 4px; padding: 3px 8px; font-size: 0.76rem; cursor: pointer; color: var(--gris-oscuro); }
+.icon-btn:hover { background: var(--azul-claro); }
+.badge { display: inline-block; font-size: 0.72rem; background: var(--azul-claro); color: var(--azul-institucional); padding: 2px 8px; border-radius: 999px; }
+.btn-add-card { width: 100%; }
+
+/* ---------- Modal ---------- */
+.modal-overlay { position: fixed; inset: 0; background: rgba(15, 42, 77, 0.45); display: flex; align-items: center; justify-content: center; z-index: 200; padding: 16px; }
+.modal-box { background: var(--blanco); border-radius: var(--radio); padding: 26px; width: 100%; max-width: 460px; max-height: 90vh; overflow-y: auto; }
+.modal-box label { display: block; font-size: 0.85rem; font-weight: 500; margin-bottom: 12px; }
+.modal-box input, .modal-box select, .modal-box textarea {
+  width: 100%; margin-top: 5px; padding: 9px 10px; border: 1px solid #cfd6dd; border-radius: 4px;
+  font-family: var(--fuente); font-size: 0.92rem;
+}
+.modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 6px; }
+
+/* ---------- Quiz ABCD ---------- */
+.quiz-progreso { font-size: 0.82rem; color: var(--gris-medio); margin-bottom: 10px; letter-spacing: 0.4px; text-transform: uppercase; }
+.quiz-contexto { background: var(--azul-claro); border-left: 3px solid var(--azul-institucional); padding: 12px 16px; border-radius: 4px; margin-bottom: 16px; font-size: 0.92rem; }
+.quiz-pregunta { font-size: 1.08rem; font-weight: 600; color: var(--azul-oscuro); margin-bottom: 18px; }
+.quiz-opciones { display: flex; flex-direction: column; gap: 10px; }
+.quiz-opcion {
+  display: flex; gap: 10px; text-align: left; align-items: flex-start;
+  background: var(--blanco); border: 1px solid #dfe4ea; border-radius: var(--radio);
+  padding: 12px 14px; cursor: pointer; font-family: var(--fuente); font-size: 0.94rem;
+}
+.quiz-opcion:hover:not(:disabled) { border-color: var(--azul-institucional); background: var(--azul-claro); }
+.quiz-opcion:disabled { cursor: default; opacity: 0.6; }
+.quiz-opcion.selected { border-color: var(--azul-institucional); background: var(--azul-claro); opacity: 1; }
+.quiz-opcion-letra { font-weight: 700; color: var(--azul-institucional); }
+
+.resultado-metric { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eceef1; font-size: 0.94rem; }
+.resultado-metric:last-child { border-bottom: none; }
+
+.skill-bar-row { margin-bottom: 12px; }
+.skill-bar-label { display: flex; justify-content: space-between; font-size: 0.88rem; margin-bottom: 4px; }
+.skill-bar-track { background: #eceef1; border-radius: 999px; height: 8px; overflow: hidden; }
+.skill-bar-fill { background: var(--azul-institucional); height: 100%; }
+
+/* ---------- Formularios de sesiones (4 y 8) ---------- */
+.form-step { margin-bottom: 22px; }
+.form-step label { display: block; font-size: 0.9rem; font-weight: 500; margin-bottom: 6px; }
+.form-step input, .form-step textarea, .form-step select {
+  width: 100%; padding: 10px 12px; border: 1px solid #cfd6dd; border-radius: 4px;
+  font-family: var(--fuente); font-size: 0.94rem; margin-bottom: 4px;
+}
+.dynamic-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; background: var(--gris-claro); padding: 12px; border-radius: var(--radio); margin-bottom: 10px; position: relative; }
+.dynamic-row .icon-btn.remove { position: absolute; top: 6px; right: 6px; }
+
+/* ---------- Matriz de priorización ---------- */
+.matriz-priorizacion { display: grid; grid-template-columns: auto repeat(2, 1fr); gap: 2px; background: #dfe4ea; border: 1px solid #dfe4ea; margin: 16px 0; }
+.matriz-priorizacion .celda { background: var(--blanco); padding: 12px; min-height: 90px; }
+.matriz-priorizacion .cabecera { background: var(--azul-claro); font-weight: 600; text-align: center; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; }
+.matriz-item { background: var(--gris-claro); border: 1px solid #dfe4ea; border-radius: 4px; padding: 6px 8px; font-size: 0.8rem; margin-bottom: 6px; cursor: pointer; }
+.matriz-item.activo { border-color: var(--azul-institucional); background: var(--azul-claro); }
+
+/* ---------- Juego de emparejados (Sesión 5) ---------- */
+.memory-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px; margin: 20px 0; }
+.memory-card { aspect-ratio: 1 / 1; background: var(--azul-institucional); color: var(--blanco); border-radius: var(--radio); display: flex; align-items: center; justify-content: center; text-align: center; font-size: 0.82rem; padding: 8px; cursor: pointer; user-select: none; }
+.memory-card.revealed { background: var(--blanco); color: var(--gris-oscuro); border: 1px solid var(--azul-institucional); }
+.memory-card.matched { background: var(--exito); color: var(--blanco); cursor: default; }
+.memory-stats { display: flex; gap: 24px; margin-bottom: 10px; font-size: 0.9rem; color: var(--gris-medio); }
+
+table.ranking-table { width: 100%; border-collapse: collapse; }
+table.ranking-table th, table.ranking-table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #eceef1; font-size: 0.9rem; }
+table.ranking-table th { color: var(--gris-medio); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; }
+
+/* ---------- Timeline 90 días (Sesión 8) ---------- */
+.timeline-90 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.timeline-90 .bloque { background: var(--gris-claro); border-radius: var(--radio); padding: 14px; }
+.timeline-90 h4 { font-size: 0.86rem; color: var(--azul-institucional); }
+
+/* ---------- Impresión / descarga en PDF ---------- */
+@media print {
+  #app-header, footer.site-footer, .no-imprimir { display: none !important; }
+  body { background: var(--blanco); }
+  main { padding: 0; }
+  .container { max-width: 100%; padding: 0; }
+}
+
+/* ---------- Placeholders de logos ---------- */
+.logo-placeholder {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: var(--azul-claro); color: var(--azul-institucional);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.9rem; border: 1px dashed var(--azul-institucional);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel administrativo — Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<main>
+  <div class="container" style="padding-top:32px;">
+    <h1 class="page-title">Panel administrativo</h1>
+    <p class="page-lead">Acceso restringido — Escuela de Directores, ANEIAP ICESI.</p>
+
+    <div class="card" id="login-card">
+      <h2>Iniciar sesión de administrador</h2>
+      <p class="page-lead">Este panel requiere autenticación de Supabase (correo y contraseña de un usuario administrador creado en tu proyecto de Supabase). No se maneja ninguna contraseña dentro del código del frontend.</p>
+      <form id="admin-login-form">
+        <label>Correo</label>
+        <input type="email" id="admin-email" required style="width:100%; padding:10px; margin-bottom:10px; border:1px solid #cfd6dd; border-radius:6px;">
+        <label>Contraseña</label>
+        <input type="password" id="admin-password" required style="width:100%; padding:10px; margin-bottom:14px; border:1px solid #cfd6dd; border-radius:6px;">
+        <button type="submit" class="btn-primary" style="width:auto;">Ingresar</button>
+      </form>
+      <div class="login-error" id="admin-error"></div>
+    </div>
+
+    <div id="admin-panel" style="display:none;">
+      <div class="card" style="display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <h2 style="margin-bottom:0;">Centro de la Escuela</h2>
+          <p class="page-lead" style="margin-bottom:0;">Sesión de administrador activa.</p>
+        </div>
+        <button type="button" class="btn-secondary" id="admin-logout">Cerrar sesión</button>
+      </div>
+
+      <div class="card">
+        <h2>Resumen general</h2>
+        <div id="resumen-general"></div>
+      </div>
+
+      <div class="card">
+        <h2>Participantes</h2>
+        <div style="margin-bottom:10px;"><button type="button" class="btn-secondary" id="export-participants">Exportar CSV</button></div>
+        <table class="ranking-table" id="participants-table">
+          <thead><tr><th>Nombre</th><th>Ingreso</th><th>Última actividad</th><th>Sesiones completadas</th></tr></thead>
+          <tbody id="participants-body"></tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>Ranking (Sesión 5)</h2>
+        <table class="ranking-table" id="admin-ranking-table">
+          <thead><tr><th>#</th><th>Participante</th><th>Puntuación</th><th>Tiempo</th></tr></thead>
+          <tbody id="admin-ranking-body"></tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>Contenido editable</h2>
+        <p class="page-lead">Las preguntas, direcciones y configuración de la Escuela no están escritas dentro del HTML: viven en archivos JSON dentro de <code>/data/</code> (<code>preguntas.json</code>, <code>direcciones.json</code>, <code>sesiones.json</code>, <code>configuracion.json</code>). Edítalos directamente en el repositorio para actualizar preguntas, respuestas, direcciones, lemas o puntuaciones, sin tocar la estructura de la aplicación.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="js/config.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

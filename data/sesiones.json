@@ -1,0 +1,10 @@
+[
+  { "numero": 1, "clave": "sesion1", "titulo": "¿Qué significa ser director?", "descripcion": "Mapa de expectativas frente al liderazgo.", "archivo": "sesion-1.html" },
+  { "numero": 2, "clave": "sesion2", "titulo": "Conociendo ANEIAP desde adentro", "descripcion": "Estructura del capítulo: antes y después.", "archivo": "sesion-2.html" },
+  { "numero": 3, "clave": "sesion3", "titulo": "Cómo funciona una Junta Capitular", "descripcion": "Simulación de decisiones tipo ABCD.", "archivo": "sesion-3.html" },
+  { "numero": 4, "clave": "sesion4", "titulo": "Planeación estratégica", "descripcion": "De un problema a un mini plan de gestión.", "archivo": "sesion-4.html" },
+  { "numero": 5, "clave": "sesion5", "titulo": "Direcciones ANEIAP", "descripcion": "Reto de emparejados con ranking.", "archivo": "sesion-5.html" },
+  { "numero": 6, "clave": "sesion6", "titulo": "Habilidades de un director", "descripcion": "Perfil de habilidades transversales.", "archivo": "sesion-6.html" },
+  { "numero": 7, "clave": "sesion7", "titulo": "Director por un día", "descripcion": "Simulación de gestión bajo presión.", "archivo": "sesion-7.html" },
+  { "numero": 8, "clave": "sesion8", "titulo": "Mi visión como futuro director", "descripcion": "Propuesta personal de dirección.", "archivo": "sesion-8.html" }
+]

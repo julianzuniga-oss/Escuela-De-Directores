@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sesión 3 — Cómo funciona una Junta Capitular · Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header id="app-header"></header>
+
+<main>
+  <div class="container">
+    <span class="session-number">Sesión 3 de 8</span>
+    <h1 class="page-title">Cómo funciona una Junta Capitular</h1>
+    <p class="page-lead">Asume el rol de miembro de una Junta Capitular y responde a cada situación.</p>
+
+    <div class="card" id="quiz-card">
+      <div id="quiz-container"></div>
+    </div>
+
+    <div class="card" id="resultado-card" style="display:none;">
+      <h2>Resultado</h2>
+      <div id="resultado-container"></div>
+      <div style="text-align:right; margin-top:16px;">
+        <button type="button" class="btn-primary" id="finalizar-btn" style="width:auto;">Finalizar Sesión 3</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">Escuela de Directores — ANEIAP ICESI</footer>
+
+<script src="js/config.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/quiz-engine.js"></script>
+<script src="js/progress-helper.js"></script>
+<script src="js/sesion3.js"></script>
+</body>
+</html>

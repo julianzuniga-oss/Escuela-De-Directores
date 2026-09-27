@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sesión 6 — Habilidades de un director · Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header id="app-header"></header>
+
+<main>
+  <div class="container">
+    <span class="session-number">Sesión 6 de 8</span>
+    <h1 class="page-title">Decisiones de liderazgo</h1>
+    <p class="page-lead">Cada situación mide una combinación de habilidades transversales necesarias para dirigir.</p>
+
+    <div class="card" id="quiz-card">
+      <div id="quiz-container"></div>
+    </div>
+
+    <div class="card" id="resultado-card" style="display:none;">
+      <h2>Perfil de habilidades</h2>
+      <div id="perfil-container"></div>
+      <div id="fortalezas-container" style="margin-top:18px;"></div>
+      <div style="text-align:right; margin-top:16px;">
+        <button type="button" class="btn-primary" id="finalizar-btn" style="width:auto;">Finalizar Sesión 6</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">Escuela de Directores — ANEIAP ICESI</footer>
+
+<script src="js/config.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/quiz-engine.js"></script>
+<script src="js/progress-helper.js"></script>
+<script src="js/sesion6.js"></script>
+</body>
+</html>

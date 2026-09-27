@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sesión 4 — Planeación estratégica · Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header id="app-header"></header>
+
+<main>
+  <div class="container">
+    <span class="session-number">Sesión 4 de 8</span>
+    <h1 class="page-title">Reto de planeación: de un problema a un plan</h1>
+
+    <div class="card">
+      <div class="quiz-contexto">
+        El capítulo presenta baja participación de asociados, poca continuidad en los equipos de trabajo
+        y dificultad para mantener actividades durante el semestre.
+      </div>
+    </div>
+
+    <form id="plan-form">
+      <div class="card form-step">
+        <h2>1. Problema principal</h2>
+        <textarea name="problema" rows="3" required maxlength="500" placeholder="Describe el problema principal identificado..."></textarea>
+      </div>
+
+      <div class="card form-step">
+        <h2>2. Objetivo general</h2>
+        <textarea name="objetivo_general" rows="3" required maxlength="400"></textarea>
+      </div>
+
+      <div class="card form-step">
+        <h2>3. Objetivos específicos</h2>
+        <label>Objetivo específico 1</label><input type="text" name="obj_esp_1" required maxlength="200">
+        <label>Objetivo específico 2</label><input type="text" name="obj_esp_2" required maxlength="200">
+        <label>Objetivo específico 3</label><input type="text" name="obj_esp_3" required maxlength="200">
+      </div>
+
+      <div class="card form-step">
+        <h2>4. Acciones</h2>
+        <div id="acciones-container"></div>
+        <button type="button" class="btn-secondary" id="add-accion">+ Agregar acción</button>
+      </div>
+
+      <div class="card form-step">
+        <h2>5. Indicadores</h2>
+        <div id="indicadores-container"></div>
+        <button type="button" class="btn-secondary" id="add-indicador">+ Agregar indicador</button>
+      </div>
+
+      <div class="card form-step">
+        <h2>6. Priorización</h2>
+        <p class="page-lead">Ubica cada una de tus acciones según su impacto y el esfuerzo que requiere.</p>
+        <div id="matriz-selector" style="margin-bottom:14px;"></div>
+        <div class="matriz-priorizacion">
+          <div class="celda"></div>
+          <div class="celda cabecera">Impacto bajo</div>
+          <div class="celda cabecera">Impacto alto</div>
+
+          <div class="celda cabecera">Esfuerzo bajo</div>
+          <div class="celda" data-cuadrante="1" id="cuadrante-1"></div>
+          <div class="celda" data-cuadrante="2" id="cuadrante-2"></div>
+
+          <div class="celda cabecera">Esfuerzo alto</div>
+          <div class="celda" data-cuadrante="3" id="cuadrante-3"></div>
+          <div class="celda" data-cuadrante="4" id="cuadrante-4"></div>
+        </div>
+      </div>
+
+      <div class="card no-imprimir" style="text-align:right;">
+        <button type="submit" class="btn-primary" style="width:auto;">Generar mi mini plan de gestión</button>
+      </div>
+    </form>
+
+    <div class="card" id="resumen-card" style="display:none;">
+      <h2>Mi mini plan de gestión</h2>
+      <div id="resumen-container"></div>
+      <div class="no-imprimir" style="text-align:right; margin-top:16px; display:flex; gap:10px; justify-content:flex-end;">
+        <button type="button" class="btn-secondary" id="descargar-pdf" style="width:auto;">Descargar PDF</button>
+        <button type="button" class="btn-primary" id="finalizar-btn" style="width:auto;">Finalizar Sesión 4</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer no-imprimir">Escuela de Directores — ANEIAP ICESI</footer>
+
+<script src="js/config.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/progress-helper.js"></script>
+<script src="js/sesion4.js"></script>
+</body>
+</html>

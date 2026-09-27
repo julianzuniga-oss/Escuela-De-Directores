@@ -1,0 +1,33 @@
+[
+  {
+    "_nota": "PLACEHOLDER: nombres, descripciones y lemas deben validarse contra los documentos oficiales vigentes de ANEIAP antes de publicar.",
+    "nombre": "Presidencia",
+    "descripcion": "Lidera y representa al capítulo ante la asociación y entidades externas.",
+    "lema": "Visión y unidad para el capítulo."
+  },
+  {
+    "nombre": "Dirección Académica",
+    "descripcion": "Impulsa la formación técnica y profesional de los asociados.",
+    "lema": "Conocimiento que transforma."
+  },
+  {
+    "nombre": "Dirección de Comunicaciones",
+    "descripcion": "Gestiona la imagen, mensajes e información del capítulo.",
+    "lema": "La voz que conecta al capítulo."
+  },
+  {
+    "nombre": "Dirección de Desarrollo",
+    "descripcion": "Fortalece el crecimiento organizacional y de los asociados.",
+    "lema": "Creciendo cada día un poco más."
+  },
+  {
+    "nombre": "Dirección de Finanzas",
+    "descripcion": "Administra los recursos económicos del capítulo.",
+    "lema": "Sostenibilidad para el futuro del capítulo."
+  },
+  {
+    "nombre": "Dirección de Mercadeo",
+    "descripcion": "Posiciona la marca del capítulo y sus actividades.",
+    "lema": "Conectando ANEIAP con el mundo."
+  }
+]

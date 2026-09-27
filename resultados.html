@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi progreso — Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header id="app-header"></header>
+
+<main>
+  <div class="container">
+    <h1 class="page-title">Mi progreso</h1>
+    <p class="page-lead">Consulta el estado de tus 8 sesiones, tus evaluaciones y tu propuesta final.</p>
+
+    <div class="card">
+      <h2>Progreso por sesión</h2>
+      <div id="progreso-lista"></div>
+    </div>
+
+    <div class="card">
+      <h2>Mis evaluaciones</h2>
+      <table class="ranking-table" id="evaluaciones-table">
+        <thead><tr><th>Sesión</th><th>Resultado</th><th>Tiempo</th><th>Fecha</th></tr></thead>
+        <tbody id="evaluaciones-body"></tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Mi puntuación (Sesión 5)</h2>
+      <div id="puntuacion-container"></div>
+    </div>
+
+    <div class="card">
+      <h2>Mi propuesta final</h2>
+      <div id="propuesta-container"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">Escuela de Directores — ANEIAP ICESI</footer>
+
+<script src="js/config.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/resultados.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Responsive — mobile-first
+   Breakpoints: 320px (base), 768px (tablet), 1024px (desktop), 1440px (large)
+   ========================================================================== */
+
+/* Menú hamburguesa visible por defecto en móvil */
+.hamburger { display: flex; }
+
+.main-nav {
+  position: fixed;
+  top: 66px; left: 0; right: 0;
+  background: var(--blanco);
+  flex-direction: column;
+  gap: 0;
+  padding: 8px 24px 16px;
+  border-bottom: 1px solid #dfe4ea;
+  transform: translateY(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+.main-nav.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+.main-nav a { padding: 12px 0; border-bottom: 1px solid #eceef1; }
+
+.participant-name { display: none; }
+
+/* Matriz de priorización: apilar en móvil */
+@media (max-width: 640px) {
+  .matriz-priorizacion { grid-template-columns: 1fr; }
+  .mapa-comparacion-grid { grid-template-columns: 1fr !important; }
+  .timeline-90 { grid-template-columns: 1fr; }
+  table.ranking-table, table.ranking-table thead, table.ranking-table tbody, table.ranking-table th, table.ranking-table td, table.ranking-table tr {
+    display: block;
+  }
+  table.ranking-table thead { display: none; }
+  table.ranking-table tr { border: 1px solid #eceef1; border-radius: 6px; margin-bottom: 10px; padding: 6px 10px; }
+  table.ranking-table td { border: none; padding: 6px 0; }
+  table.ranking-table td::before { content: attr(data-label); font-weight: 600; display: block; font-size: 0.72rem; color: var(--gris-medio); text-transform: uppercase; }
+}
+
+/* Tablet en adelante: menú horizontal, se oculta hamburguesa */
+@media (min-width: 768px) {
+  .hamburger { display: none; }
+  .main-nav {
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    border: none;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+    gap: 22px;
+  }
+  .main-nav a { border-bottom: 2px solid transparent; padding: 6px 2px; }
+  .participant-name { display: inline; }
+  .session-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .session-grid { grid-template-columns: repeat(3, 1fr); }
+  .login-card { padding: 56px 48px; }
+}
+
+@media (min-width: 1440px) {
+  .session-grid { grid-template-columns: repeat(4, 1fr); }
+}

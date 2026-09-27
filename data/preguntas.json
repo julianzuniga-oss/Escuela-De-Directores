@@ -1,0 +1,180 @@
+{
+  "sesion3": {
+    "titulo": "Caso de simulación — Junta Capitular",
+    "preguntas": [
+      {
+        "id": "s3q1",
+        "context": "Eres integrante de la Junta Capitular. El capítulo debe decidir cómo distribuir un presupuesto limitado entre dos actividades igual de importantes.",
+        "prompt": "¿Qué harías primero?",
+        "options": [
+          { "id": "a", "text": "Asignar el presupuesto según quién lo pidió primero.", "correct": false },
+          { "id": "b", "text": "Revisar el impacto esperado de cada actividad y priorizar con criterios objetivos.", "correct": true },
+          { "id": "c", "text": "Dividir el presupuesto exactamente por la mitad sin analizar el impacto.", "correct": false },
+          { "id": "d", "text": "Posponer la decisión indefinidamente hasta tener más recursos.", "correct": false }
+        ]
+      },
+      {
+        "id": "s3q2",
+        "context": "Dos miembros de la Junta tienen una diferencia fuerte de opinión sobre el rumbo de un proyecto durante una sesión.",
+        "prompt": "¿Cómo debería manejarse la situación?",
+        "options": [
+          { "id": "a", "text": "Ignorar el conflicto y seguir con la agenda.", "correct": false },
+          { "id": "b", "text": "Tomar partido públicamente por uno de los dos.", "correct": false },
+          { "id": "c", "text": "Facilitar un espacio de escucha y buscar puntos en común antes de decidir.", "correct": true },
+          { "id": "d", "text": "Someterlo a votación inmediata sin discusión.", "correct": false }
+        ]
+      },
+      {
+        "id": "s3q3",
+        "context": "Se acerca el cierre de semestre y varias actividades planeadas no se han ejecutado.",
+        "prompt": "¿Cuál es la mejor forma de abordarlo?",
+        "options": [
+          { "id": "a", "text": "Cancelar todas las actividades pendientes sin evaluar alternativas.", "correct": false },
+          { "id": "b", "text": "Revisar el cronograma, identificar causas y reorganizar prioridades.", "correct": true },
+          { "id": "c", "text": "Culpar públicamente al responsable del retraso.", "correct": false },
+          { "id": "d", "text": "Dejar que cada equipo decida por su cuenta sin coordinación.", "correct": false }
+        ]
+      },
+      {
+        "id": "s3q4",
+        "context": "La participación de los asociados en las últimas convocatorias ha bajado notablemente.",
+        "prompt": "¿Qué acción es más adecuada como Junta Capitular?",
+        "options": [
+          { "id": "a", "text": "Indagar las causas con los asociados y ajustar la estrategia de convocatoria.", "correct": true },
+          { "id": "b", "text": "Asumir que a los asociados ya no les interesa la asociación.", "correct": false },
+          { "id": "c", "text": "Aumentar las sanciones por inasistencia sin más análisis.", "correct": false },
+          { "id": "d", "text": "Eliminar las actividades que tienen baja asistencia sin evaluarlas.", "correct": false }
+        ]
+      },
+      {
+        "id": "s3q5",
+        "context": "Un lineamiento nacional de ANEIAP entra en conflicto con una costumbre interna del capítulo.",
+        "prompt": "¿Qué debe primar en la decisión de la Junta?",
+        "options": [
+          { "id": "a", "text": "La costumbre interna, porque lleva más tiempo aplicándose.", "correct": false },
+          { "id": "b", "text": "Ignorar ambos y decidir según conveniencia personal.", "correct": false },
+          { "id": "c", "text": "El lineamiento nacional, ajustando la costumbre interna para cumplirlo.", "correct": true },
+          { "id": "d", "text": "Consultarlo únicamente con el presidente y no con el resto de la Junta.", "correct": false }
+        ]
+      }
+    ]
+  },
+
+  "sesion6": {
+    "titulo": "Decisiones de liderazgo",
+    "preguntas": [
+      {
+        "id": "s6q1",
+        "context": "Uno de los integrantes de tu equipo lleva dos semanas incumpliendo sus responsabilidades. El resto del equipo comienza a molestarse.",
+        "prompt": "¿Qué harías primero?",
+        "options": [
+          { "id": "a", "text": "Hablar en privado con la persona para entender qué está pasando.", "skills": { "comunicacion": 3, "inteligencia_emocional": 2 } },
+          { "id": "b", "text": "Señalarlo frente a todo el equipo para que reaccione.", "skills": { "liderazgo": 1 } },
+          { "id": "c", "text": "Redistribuir sus tareas entre los demás sin decirle nada.", "skills": { "organizacion": 2 } },
+          { "id": "d", "text": "Esperar a ver si se resuelve solo.", "skills": { } }
+        ]
+      },
+      {
+        "id": "s6q2",
+        "context": "Debes entregar un proyecto en tres días y el plan original ya no es viable.",
+        "prompt": "¿Cómo reaccionas?",
+        "options": [
+          { "id": "a", "text": "Ajustas el plan con el equipo y redefines prioridades juntos.", "skills": { "adaptabilidad": 3, "organizacion": 2 } },
+          { "id": "b", "text": "Sigues con el plan original aunque ya no funcione.", "skills": { } },
+          { "id": "c", "text": "Tomas todas las decisiones solo, sin consultar al equipo.", "skills": { "liderazgo": 2 } },
+          { "id": "d", "text": "Pides una prórroga sin proponer ningún ajuste.", "skills": { "comunicacion": 1 } }
+        ]
+      },
+      {
+        "id": "s6q3",
+        "context": "Tienes una tarea importante que podrías delegar, pero crees que tú la harías más rápido.",
+        "prompt": "¿Qué decides?",
+        "options": [
+          { "id": "a", "text": "La delegas explicando el objetivo y brindando acompañamiento.", "skills": { "delegacion": 3, "comunicacion": 1 } },
+          { "id": "b", "text": "La haces tú mismo para no arriesgarte.", "skills": { } },
+          { "id": "c", "text": "La delegas sin dar ningún contexto.", "skills": { "delegacion": 1 } },
+          { "id": "d", "text": "La dejas sin asignar hasta último momento.", "skills": { } }
+        ]
+      },
+      {
+        "id": "s6q4",
+        "context": "Durante una reunión, surge una idea poco convencional para resolver un problema recurrente del equipo.",
+        "prompt": "¿Cómo respondes?",
+        "options": [
+          { "id": "a", "text": "La descartas de inmediato por ser distinta a lo habitual.", "skills": { } },
+          { "id": "b", "text": "Exploras la idea con el equipo antes de decidir.", "skills": { "creatividad": 3, "comunicacion": 1 } },
+          { "id": "c", "text": "La adoptas sin analizarla, solo porque es novedosa.", "skills": { "creatividad": 1 } },
+          { "id": "d", "text": "Ignoras a quien la propuso y sigues con la agenda.", "skills": { } }
+        ]
+      },
+      {
+        "id": "s6q5",
+        "context": "Un compañero comete un error que afecta a todo el equipo y se siente muy mal por eso.",
+        "prompt": "¿Qué haces?",
+        "options": [
+          { "id": "a", "text": "Le haces sentir peor recalcando el error frente a otros.", "skills": { } },
+          { "id": "b", "text": "Lo apoyas, revisan juntos qué pasó y cómo evitarlo a futuro.", "skills": { "inteligencia_emocional": 3, "resolucion_conflictos": 2 } },
+          { "id": "c", "text": "Evitas el tema por completo para no incomodar.", "skills": { } },
+          { "id": "d", "text": "Le quitas todas sus responsabilidades sin conversarlo.", "skills": { "organizacion": 1 } }
+        ]
+      }
+    ]
+  },
+
+  "sesion7": {
+    "titulo": "Director por un día",
+    "contexto_general": "Faltan tres semanas para un evento importante. El presupuesto disponible es limitado, dos integrantes del equipo no han cumplido sus responsabilidades y la participación de asociados ha disminuido.",
+    "preguntas": [
+      {
+        "id": "s7q1",
+        "prompt": "Decisión 1 — El presupuesto disponible es insuficiente. ¿Qué haces?",
+        "options": [
+          { "id": "a", "text": "Cancelas inmediatamente.", "correct": false, "skills": { "gestion_recursos": -1 } },
+          { "id": "b", "text": "Solicitas recursos sin analizar alternativas.", "correct": false, "skills": { "gestion_recursos": 1 } },
+          { "id": "c", "text": "Priorizas, revisas recursos y propones alternativas.", "correct": true, "skills": { "gestion_recursos": 3, "planeacion": 2 } },
+          { "id": "d", "text": "Trasladas la responsabilidad a otra dirección.", "correct": false, "skills": { } }
+        ]
+      },
+      {
+        "id": "s7q2",
+        "prompt": "Decisión 2 — Dos integrantes del equipo no han cumplido sus responsabilidades. ¿Qué haces?",
+        "options": [
+          { "id": "a", "text": "Hablas con ellos, entiendes las causas y ajustas el plan.", "correct": true, "skills": { "liderazgo": 3, "comunicacion": 2 } },
+          { "id": "b", "text": "Los reemplazas sin conversar con ellos.", "correct": false, "skills": { "liderazgo": 1 } },
+          { "id": "c", "text": "Asumes tú todas sus tareas.", "correct": false, "skills": { "organizacion": 1 } },
+          { "id": "d", "text": "No haces nada y esperas que se resuelva solo.", "correct": false, "skills": { } }
+        ]
+      },
+      {
+        "id": "s7q3",
+        "prompt": "Decisión 3 — La participación de asociados ha disminuido a tres semanas del evento. ¿Qué haces?",
+        "options": [
+          { "id": "a", "text": "Cancelas la convocatoria de asociados.", "correct": false, "skills": { } },
+          { "id": "b", "text": "Ajustas la estrategia de comunicación y motivación del evento.", "correct": true, "skills": { "comunicacion": 3, "planeacion": 1 } },
+          { "id": "c", "text": "Obligas la asistencia sin explicar el propósito.", "correct": false, "skills": { "liderazgo": 1 } },
+          { "id": "d", "text": "Ignoras la baja participación y continúas igual.", "correct": false, "skills": { } }
+        ]
+      },
+      {
+        "id": "s7q4",
+        "prompt": "Decisión 4 — Con menos tiempo del planeado, ¿cómo organizas al equipo?",
+        "options": [
+          { "id": "a", "text": "Rehaces el cronograma priorizando lo crítico para el evento.", "correct": true, "skills": { "planeacion": 3, "organizacion": 2 } },
+          { "id": "b", "text": "Mantienes el cronograma original sin ajustes.", "correct": false, "skills": { } },
+          { "id": "c", "text": "Añades más reuniones sin reorganizar tareas.", "correct": false, "skills": { "organizacion": 1 } },
+          { "id": "d", "text": "Delegas todo sin dar seguimiento.", "correct": false, "skills": { "delegacion": 1 } }
+        ]
+      },
+      {
+        "id": "s7q5",
+        "prompt": "Decisión 5 — Faltando pocos días, ¿cómo comunicas el estado del evento a la Junta Capitular?",
+        "options": [
+          { "id": "a", "text": "Presentas un informe claro con riesgos, avances y plan de contingencia.", "correct": true, "skills": { "comunicacion": 3, "planeacion": 2 } },
+          { "id": "b", "text": "No informas nada hasta que el evento termine.", "correct": false, "skills": { } },
+          { "id": "c", "text": "Solo mencionas lo que ha salido bien.", "correct": false, "skills": { "comunicacion": 1 } },
+          { "id": "d", "text": "Delegas el informe a otra persona sin revisarlo.", "correct": false, "skills": { "delegacion": 1 } }
+        ]
+      }
+    ]
+  }
+}

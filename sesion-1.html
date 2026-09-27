@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sesión 1 — ¿Qué significa ser director? · Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header id="app-header"></header>
+
+<main>
+  <div class="container">
+    <span class="session-number">Sesión 1 de 8</span>
+    <h1 class="page-title">¿Qué significa ser director?</h1>
+    <p class="page-lead">Construye tu mapa de expectativas frente al liderazgo y al rol de director. Agrega, edita, mueve o elimina elementos en cada categoría.</p>
+
+    <div class="card">
+      <h2>Mi mapa de expectativas</h2>
+      <div id="mapa-individual"></div>
+    </div>
+
+    <div class="card">
+      <h2>Mapa colectivo de expectativas</h2>
+      <p class="page-lead" style="margin-bottom:14px;">Consulta, en modo lectura, las expectativas construidas por los demás asociados.</p>
+      <div id="lista-colectiva"></div>
+      <div id="mapa-colectivo-detalle" style="margin-top:18px;"></div>
+    </div>
+
+    <div class="card" style="text-align:right;">
+      <button type="button" class="btn-primary" id="finalizar-btn" style="width:auto;">Finalizar Sesión 1</button>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">Escuela de Directores — ANEIAP ICESI</footer>
+
+<script src="js/config.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/mapa-builder.js"></script>
+<script src="js/progress-helper.js"></script>
+<script src="js/sesion1.js"></script>
+</body>
+</html>

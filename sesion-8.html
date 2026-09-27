@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sesión 8 — Mi visión como futuro director · Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header id="app-header"></header>
+
+<main>
+  <div class="container">
+    <span class="session-number">Sesión 8 de 8</span>
+    <h1 class="page-title">Mi visión de dirección</h1>
+
+    <form id="vision-form">
+      <div class="card form-step">
+        <h2>1. Cargo o dirección de interés</h2>
+        <select name="cargo" required>
+          <option value="">Selecciona una opción</option>
+          <option>Presidencia</option><option>Académico</option><option>Comunicaciones</option>
+          <option>Desarrollo</option><option>Finanzas</option><option>Mercadeo</option><option>Otro</option>
+        </select>
+      </div>
+
+      <div class="card form-step">
+        <h2>2. ¿Por qué quiero asumir este rol?</h2>
+        <textarea name="motivacion" rows="4" required maxlength="600"></textarea>
+      </div>
+
+      <div class="card form-step">
+        <h2>3. Diagnóstico</h2>
+        <label>¿Qué situación del capítulo considero que debería mejorar?</label>
+        <textarea name="diagnostico" rows="3" required maxlength="500"></textarea>
+      </div>
+
+      <div class="card form-step">
+        <h2>4. Objetivo</h2>
+        <label>¿Qué quiero lograr?</label>
+        <textarea name="objetivo" rows="3" required maxlength="400"></textarea>
+      </div>
+
+      <div class="card form-step">
+        <h2>5. Tres acciones prioritarias</h2>
+        <div id="acciones-container"></div>
+      </div>
+
+      <div class="card form-step">
+        <h2>6. Mi propuesta de valor</h2>
+        <label>¿Qué podría aportar yo al cargo?</label>
+        <textarea name="propuesta_valor" rows="3" required maxlength="400"></textarea>
+      </div>
+
+      <div class="card form-step">
+        <h2>7. Riesgos</h2>
+        <label>¿Cuáles serían los principales riesgos?</label>
+        <textarea name="riesgos" rows="3" required maxlength="400"></textarea>
+      </div>
+
+      <div class="card form-step">
+        <h2>8. Primeros 90 días</h2>
+        <div class="timeline-90">
+          <div class="bloque"><h4>Día 1–30</h4><textarea name="dias_1_30" rows="3" required></textarea></div>
+          <div class="bloque"><h4>Día 31–60</h4><textarea name="dias_31_60" rows="3" required></textarea></div>
+          <div class="bloque"><h4>Día 61–90</h4><textarea name="dias_61_90" rows="3" required></textarea></div>
+        </div>
+      </div>
+
+      <div class="card form-step">
+        <h2>9. Reflexión final</h2>
+        <label>¿Qué tipo de director quiero llegar a ser?</label>
+        <textarea name="reflexion" rows="4" required maxlength="600"></textarea>
+      </div>
+
+      <div class="card no-imprimir" style="text-align:right;">
+        <button type="submit" class="btn-primary" style="width:auto;">Generar mi visión de dirección</button>
+      </div>
+    </form>
+
+    <div class="card" id="resumen-card" style="display:none;">
+      <h2>Mi visión de dirección</h2>
+      <div id="resumen-container"></div>
+      <div class="no-imprimir" style="text-align:right; margin-top:16px; display:flex; gap:10px; justify-content:flex-end;">
+        <button type="button" class="btn-secondary" id="descargar-pdf" style="width:auto;">Descargar mi propuesta (PDF)</button>
+        <button type="button" class="btn-primary" id="finalizar-btn" style="width:auto;">Finalizar Sesión 8</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer no-imprimir">Escuela de Directores — ANEIAP ICESI</footer>
+
+<script src="js/config.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/progress-helper.js"></script>
+<script src="js/sesion8.js"></script>
+</body>
+</html>

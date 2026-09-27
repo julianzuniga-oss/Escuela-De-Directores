@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sesión 7 — Director por un día · Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header id="app-header"></header>
+
+<main>
+  <div class="container">
+    <span class="session-number">Sesión 7 de 8</span>
+    <h1 class="page-title">Director por un día</h1>
+
+    <div class="card" id="cargo-card">
+      <h2>Selecciona el cargo que vas a asumir</h2>
+      <div class="form-step">
+        <select id="cargo-select">
+          <option value="Presidencia">Presidencia</option>
+          <option value="Académico">Académico</option>
+          <option value="Comunicaciones">Comunicaciones</option>
+          <option value="Desarrollo">Desarrollo</option>
+          <option value="Finanzas">Finanzas</option>
+          <option value="Mercadeo">Mercadeo</option>
+          <option value="Otro">Otro cargo vigente</option>
+        </select>
+      </div>
+      <button type="button" class="btn-primary" id="empezar-caso" style="width:auto;">Comenzar el caso</button>
+    </div>
+
+    <div class="card" id="quiz-card" style="display:none;">
+      <div id="quiz-container"></div>
+    </div>
+
+    <div class="card" id="resultado-card" style="display:none;">
+      <h2>Resultado de mi gestión</h2>
+      <div id="resultado-container"></div>
+      <div id="perfil-container" style="margin-top:16px;"></div>
+      <div style="text-align:right; margin-top:16px;">
+        <button type="button" class="btn-primary" id="finalizar-btn" style="width:auto;">Finalizar Sesión 7</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">Escuela de Directores — ANEIAP ICESI</footer>
+
+<script src="js/config.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/quiz-engine.js"></script>
+<script src="js/progress-helper.js"></script>
+<script src="js/sesion7.js"></script>
+</body>
+</html>

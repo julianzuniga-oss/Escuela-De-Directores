@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escuela de Directores — ANEIAP ICESI</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="login-page">
+  <div class="login-card">
+    <div class="brand-mark" style="margin:0 auto 18px;">ED</div>
+    <h1 class="login-title">Escuela de Directores</h1>
+    <div class="login-org">ANEIAP ICESI</div>
+    <p class="login-subtitle">Formación, liderazgo y visión para quienes quieren transformar la asociación.</p>
+
+    <h2 style="font-size:1.05rem; margin-bottom:14px;">Ingresa a la escuela</h2>
+    <form class="login-form" id="login-form" novalidate>
+      <label for="fullname">Nombre completo</label>
+      <input type="text" id="fullname" name="fullname" autocomplete="name" placeholder="Escribe tu nombre completo" required>
+      <div class="login-error" id="login-error"></div>
+      <button type="submit" class="btn-primary">Ingresar</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script>
+  // Si ya hay una sesión activa, ir directo al dashboard
+  if (Auth.getCurrentParticipant()) {
+    window.location.href = "dashboard.html";
+  }
+
+  const form = document.getElementById("login-form");
+  const errorEl = document.getElementById("login-error");
+
+  form.addEventListener("submit", async (ev) => {
+    ev.preventDefault();
+    errorEl.textContent = "";
+    const name = document.getElementById("fullname").value;
+
+    if (!Auth.isValidName(name)) {
+      errorEl.textContent = "Por favor ingresa tu nombre completo (mínimo 3 caracteres).";
+      return;
+    }
+
+    const btn = form.querySelector("button[type=submit]");
+    btn.disabled = true;
+    btn.textContent = "Ingresando…";
+
+    try {
+      await Auth.loginWithName(name);
+      window.location.href = "dashboard.html";
+    } catch (e) {
+      errorEl.textContent = "No fue posible ingresar. Intenta nuevamente.";
+      btn.disabled = false;
+      btn.textContent = "Ingresar";
+    }
+  });
+</script>
+</body>
+</html>

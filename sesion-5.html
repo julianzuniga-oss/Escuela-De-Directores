@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sesión 5 — Direcciones ANEIAP · Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header id="app-header"></header>
+
+<main>
+  <div class="container">
+    <span class="session-number">Sesión 5 de 8</span>
+    <h1 class="page-title">Reto de direcciones ANEIAP</h1>
+    <p class="page-lead">Encuentra las parejas nombre ↔ descripción de cada dirección. Acierto: +100 puntos. Error: −10 puntos.</p>
+
+    <div class="card">
+      <div class="memory-stats">
+        <span>Intentos: <strong id="stat-intentos">0</strong></span>
+        <span>Aciertos: <strong id="stat-aciertos">0</strong></span>
+        <span>Puntuación: <strong id="stat-puntuacion">0</strong></span>
+        <span>Tiempo: <strong id="stat-tiempo">0s</strong></span>
+      </div>
+      <div class="memory-grid" id="memory-grid"></div>
+    </div>
+
+    <div class="card" id="resultado-card" style="display:none; text-align:center;">
+      <h2>¡Partida completada!</h2>
+      <p id="resultado-texto"></p>
+      <button type="button" class="btn-primary" id="finalizar-btn" style="width:auto;">Finalizar Sesión 5</button>
+    </div>
+
+    <div class="card">
+      <h2>Ranking de la Escuela</h2>
+      <table class="ranking-table" id="ranking-table">
+        <thead><tr><th>#</th><th>Participante</th><th>Puntuación</th><th>Tiempo</th></tr></thead>
+        <tbody id="ranking-body"></tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">Escuela de Directores — ANEIAP ICESI</footer>
+
+<script src="js/config.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/progress-helper.js"></script>
+<script src="js/sesion5.js"></script>
+</body>
+</html>

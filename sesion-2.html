@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sesión 2 — Conociendo ANEIAP desde adentro · Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header id="app-header"></header>
+
+<main>
+  <div class="container">
+    <span class="session-number">Sesión 2 de 8</span>
+    <h1 class="page-title">Conociendo ANEIAP desde adentro</h1>
+    <p class="page-lead">Construye tu mapa de la estructura del capítulo antes y después de la explicación institucional.</p>
+
+    <div class="card" id="bloque-inicial">
+      <h2>Momento 1 — ¿Cuánto conoces actualmente la estructura de ANEIAP?</h2>
+      <p class="page-lead">Organiza visualmente presidencia, interventoría, direcciones, junta capitular y sus relaciones, tal como las conoces hoy.</p>
+      <div id="mapa-inicial"></div>
+      <div style="text-align:right; margin-top:14px;">
+        <button type="button" class="btn-primary" id="continuar-final" style="width:auto;">Continuar a la explicación →</button>
+      </div>
+    </div>
+
+    <div class="card" id="bloque-final" style="display:none;">
+      <h2>Momento 2 — Construye nuevamente la estructura de ANEIAP</h2>
+      <p class="page-lead">Ahora que conoces mejor la estructura, vuelve a construir el mapa.</p>
+      <div id="mapa-final"></div>
+      <div style="text-align:right; margin-top:14px;">
+        <button type="button" class="btn-primary" id="ver-comparacion" style="width:auto;">Ver mi evolución →</button>
+      </div>
+    </div>
+
+    <div class="card" id="bloque-comparacion" style="display:none;">
+      <h2>Evolución de mi conocimiento</h2>
+      <div id="comparacion-resumen" style="margin-bottom:18px;"></div>
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:18px;" class="mapa-comparacion-grid">
+        <div>
+          <h3>Mapa inicial</h3>
+          <div id="mapa-inicial-solo"></div>
+        </div>
+        <div>
+          <h3>Mapa final</h3>
+          <div id="mapa-final-solo"></div>
+        </div>
+      </div>
+      <div style="text-align:right; margin-top:20px;">
+        <button type="button" class="btn-primary" id="finalizar-btn" style="width:auto;">Finalizar Sesión 2</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">Escuela de Directores — ANEIAP ICESI</footer>
+
+<script src="js/config.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/mapa-builder.js"></script>
+<script src="js/progress-helper.js"></script>
+<script src="js/sesion2.js"></script>
+</body>
+</html>
