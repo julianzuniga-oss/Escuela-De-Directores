@@ -1,4 +1,4 @@
-# Escuela de Directores — ANEIAP ICESI
+# Escuela de Directores — ANEIAP
 
 Plataforma web institucional para que los asociados de ANEIAP ICESI participen en los 8 espacios de formación de la Escuela de Directores: liderazgo, estructura organizacional, planeación estratégica y dirección.
 
