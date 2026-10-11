@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conoce los cargos #1 · Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header id="app-header"></header>
+<main>
+<div class="container">
+<span class="session-number">Sesión 2 de 7 · Fase 2</span>
+<h1 class="page-title">Conoce los cargos #1</h1>
+<p class="page-lead">Académico · Comunicaciones · Desarrollo · Finanzas. Primero dibuja cómo crees que está organizada la estructura de ANEIAP; después compite en el reto de cargos.</p>
+<div class="card" id="stage-mapa">
+<h2>Momento 1 — Mi mapa de estructura inicial</h2>
+<p class="page-lead">Antes de conocer los cargos, ubica en el lienzo los logos y conéctalos como crees que está organizada la estructura de ANEIAP. Puedes agregar también cajas, círculos y textos. No te preocupes por acertar: este mapa servirá para ver tu evolución en la Sesión 3.</p>
+<div id="lienzo"></div>
+<div id="mapa-acciones" class="ce-statusbar"><span id="save-status">Listo</span><button type="button" class="btn-primary" id="guardar-mapa" style="width:auto;">Guardar mapa y continuar al reto</button></div>
+<p id="mapa-nota" class="page-lead" hidden style="margin-top:10px;">Tu mapa inicial quedó guardado y bloqueado. Lo compararás con tu mapa final en la Sesión 3.</p>
+</div>
+<div class="card" id="stage-kahoot" hidden>
+<h2>Momento 2 — Reto de cargos #1</h2>
+<p class="page-lead">Académico, Comunicaciones, Desarrollo y Finanzas. Hasta 700 puntos.</p>
+<div id="kahoot-container"></div>
+</div>
+</div>
+</main>
+<footer class="site-footer no-imprimir">Escuela de Directores — ANEIAP ICESI</footer>
+<script src="js/config.js"></script>
+<script src="js/sessions-meta.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/progress-helper.js"></script>
+<script src="js/points.js"></script>
+<script src="js/guard.js"></script>
+<script src="js/canvas-editor.js"></script>
+<script src="js/kahoot-engine.js"></script>
+<script src="js/sesion2.js"></script>
+</body>
+</html>

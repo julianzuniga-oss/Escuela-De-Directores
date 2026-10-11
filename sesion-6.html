@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CMI, PLANEIAP, PG · Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header id="app-header"></header>
+<main>
+<div class="container">
+<span class="session-number">Sesión 6 de 7 · Fase 2</span>
+<h1 class="page-title">CMI, PLANEIAP, PG</h1>
+<p class="page-lead">Construye un plan de gestión: del problema a los objetivos, acciones e indicadores, alineado con el CMI y el PLANEIAP. Hasta 1000 puntos.</p>
+<div class="card"><div class="quiz-contexto">El capítulo presenta baja participación de asociados, poca continuidad en los equipos de trabajo y dificultad para mantener actividades durante el semestre.</div></div>
+<form id="plan-form">
+<div class="card form-step"><h2>1. Problema principal</h2>
+<textarea name="problema" rows="3" required maxlength="500" placeholder="Describe el problema principal identificado..."></textarea></div>
+<div class="card form-step"><h2>2. Objetivo general</h2>
+<textarea name="objetivo_general" rows="3" required maxlength="400"></textarea>
+<label>Alineación con el PLANEIAP (¿qué línea u objetivo del plan estratégico apoya?)</label>
+<textarea name="planeiap" rows="2" required maxlength="400"></textarea></div>
+<div class="card form-step"><h2>3. Objetivos específicos y perspectiva del CMI</h2>
+<div class="dynamic-row"><div style="grid-column:1/-1"><label>Objetivo específico 1</label><input type="text" name="obj_1" required maxlength="200"></div><div><label>Perspectiva CMI</label><select name="persp_1" data-persp></select></div></div>
+<div class="dynamic-row"><div style="grid-column:1/-1"><label>Objetivo específico 2</label><input type="text" name="obj_2" required maxlength="200"></div><div><label>Perspectiva CMI</label><select name="persp_2" data-persp></select></div></div>
+<div class="dynamic-row"><div style="grid-column:1/-1"><label>Objetivo específico 3</label><input type="text" name="obj_3" required maxlength="200"></div><div><label>Perspectiva CMI</label><select name="persp_3" data-persp></select></div></div></div>
+<div class="card form-step"><h2>4. Acciones del plan de gestión (PG)</h2>
+<div id="acciones-container"></div><button type="button" class="btn-secondary" id="add-accion">+ Agregar acción</button></div>
+<div class="card form-step"><h2>5. Indicadores</h2>
+<div id="indicadores-container"></div><button type="button" class="btn-secondary" id="add-indicador">+ Agregar indicador</button></div>
+<div class="card form-step"><h2>6. Priorización</h2>
+<p class="page-lead">Selecciona una acción de la lista y luego toca el cuadrante donde la ubicas según su impacto y el esfuerzo que requiere.</p>
+<div id="matriz-selector" style="margin-bottom:14px;"></div>
+<div class="matriz-priorizacion">
+<div class="celda"></div><div class="celda cabecera">Impacto bajo</div><div class="celda cabecera">Impacto alto</div>
+<div class="celda cabecera">Esfuerzo bajo</div><div class="celda" data-cuadrante="1" id="cuadrante-1"></div><div class="celda" data-cuadrante="2" id="cuadrante-2"></div>
+<div class="celda cabecera">Esfuerzo alto</div><div class="celda" data-cuadrante="3" id="cuadrante-3"></div><div class="celda" data-cuadrante="4" id="cuadrante-4"></div>
+</div></div>
+<div class="card no-imprimir" style="text-align:right;" id="form-actions"><button type="submit" class="btn-primary" style="width:auto;">Generar mi plan de gestión</button></div>
+</form>
+<div class="card" id="resumen-card" hidden>
+<h2>Mi plan de gestión</h2>
+<div id="resumen-container"></div>
+<div class="no-imprimir" style="text-align:right;margin-top:16px;display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;">
+<button type="button" class="btn-secondary" id="descargar-pdf" style="width:auto;">Descargar PDF</button>
+<button type="button" class="btn-primary" id="finalizar-btn" style="width:auto;">Finalizar Sesión 6</button></div>
+</div>
+</div>
+</main>
+<footer class="site-footer no-imprimir">Escuela de Directores — ANEIAP ICESI</footer>
+<script src="js/config.js"></script>
+<script src="js/sessions-meta.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/progress-helper.js"></script>
+<script src="js/points.js"></script>
+<script src="js/guard.js"></script>
+<script src="js/sesion6.js"></script>
+</body>
+</html>

@@ -1,0 +1,896 @@
+{
+  "_nota": "CONTENIDO DE EJEMPLO: los casos y respuestas están redactados como situaciones plausibles, no como contenido institucional certificado. Valídalos con los documentos oficiales vigentes de ANEIAP (funciones de cada cargo, Código de ética, normativa de membresía) antes de usarlos en la Escuela.",
+  "cargos1": {
+    "titulo": "Reto de cargos #1",
+    "preguntas": [
+      {
+        "id": "c1q1",
+        "context": "El capítulo quiere ofrecer una capacitación técnica a los asociados sobre un tema de ingeniería.",
+        "prompt": "¿Qué dirección lidera principalmente esta iniciativa?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dirección de Finanzas",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Dirección de Comunicaciones",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Dirección Académica",
+            "correct": true
+          },
+          {
+            "id": "d",
+            "text": "Interventoría",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": "c1q2",
+        "context": "Se necesita diseñar las piezas gráficas y la campaña en redes para convocar a un evento del capítulo.",
+        "prompt": "¿Qué dirección tiene la responsabilidad principal?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dirección Académica",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Dirección de Comunicaciones",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Dirección de Finanzas",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Dirección de Desarrollo",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": "c1q3",
+        "context": "El capítulo detecta que varios asociados nuevos no se sienten integrados y quiere fortalecer su proceso de formación y permanencia.",
+        "prompt": "¿Qué dirección debería liderar el trabajo?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dirección de Finanzas",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Dirección de Comunicaciones",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Dirección Académica",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Dirección de Desarrollo",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "id": "c1q4",
+        "context": "Hay que elaborar el presupuesto de un evento y hacer seguimiento a sus ingresos y gastos.",
+        "prompt": "¿Quién debe encargarse principalmente?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dirección de Finanzas",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Dirección de Desarrollo",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Dirección de Comunicaciones",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Dirección Académica",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": "c1q5",
+        "context": "Una dirección necesita saber con cuánto dinero cuenta para ejecutar su proyecto del semestre.",
+        "prompt": "¿A quién debe acudir primero?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A Comunicaciones, para que lo publique",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "A la Dirección de Finanzas, para conocer y planear los recursos",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "A nadie: decide el gasto por su cuenta",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Espera a que alguien se lo informe",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": "c1q6",
+        "context": "Varias direcciones deben trabajar juntas en un mismo evento.",
+        "prompt": "¿Cuál es la mejor práctica?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Que cada una trabaje por separado sin coordinar",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Dejar todo en una sola dirección",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Coordinar responsabilidades y fechas entre direcciones desde la planeación",
+            "correct": true
+          },
+          {
+            "id": "d",
+            "text": "Esperar a la semana del evento para repartir tareas",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  "cargos2": {
+    "titulo": "Reto de cargos #2",
+    "preguntas": [
+      {
+        "id": "c2q1",
+        "context": "El capítulo busca patrocinadores y alianzas comerciales para financiar actividades y posicionar su marca.",
+        "prompt": "¿Qué dirección lidera esta gestión?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dirección de Mercadeo",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Dirección Académica",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Interventoría",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Dirección de Desarrollo",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": "c2q2",
+        "context": "Se requiere representar al capítulo ante la asociación y otras entidades, y orientar el rumbo general del capítulo.",
+        "prompt": "¿Qué cargo tiene esta responsabilidad?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dirección de Proyectos",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Interventoría",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Presidencia",
+            "correct": true
+          },
+          {
+            "id": "d",
+            "text": "Dirección de Mercadeo",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": "c2q3",
+        "context": "Se necesita verificar que las dependencias cumplan la normativa y hacer seguimiento objetivo a la gestión del capítulo.",
+        "prompt": "¿Qué cargo cumple esta función?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Presidencia",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Interventoría",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Dirección de Mercadeo",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Dirección de Finanzas",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": "c2q4",
+        "context": "Un grupo de asociados va a estructurar una iniciativa con objetivos, cronograma y recursos para ejecutarla durante el semestre.",
+        "prompt": "¿Qué dirección acompaña y articula este tipo de iniciativas?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dirección de Comunicaciones",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Dirección de Proyectos",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Dirección Académica",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Interventoría",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": "c2q5",
+        "context": "Una empresa quiere patrocinar un evento a cambio de visibilidad para su marca en el capítulo.",
+        "prompt": "¿Qué dirección debería liderar la negociación?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dirección Académica",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Interventoría",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Dirección de Desarrollo",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Dirección de Mercadeo",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "id": "c2q6",
+        "context": "Varias direcciones avanzan en proyectos distintos y necesitan alinearse con los objetivos del capítulo.",
+        "prompt": "¿Qué rol cumple la Presidencia frente a las direcciones?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Hacer ella misma el trabajo de las direcciones",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Mantenerse al margen",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Orientar, articular y apoyar a las direcciones hacia los objetivos del capítulo",
+            "correct": true
+          },
+          {
+            "id": "d",
+            "text": "Solo vigilar sin apoyar",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  "habilidades": {
+    "titulo": "Reto de habilidades blandas",
+    "preguntas": [
+      {
+        "id": "s6q1",
+        "context": "Uno de los integrantes de tu equipo lleva dos semanas incumpliendo sus responsabilidades. El resto del equipo comienza a molestarse.",
+        "prompt": "¿Qué harías primero?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Hablar en privado con la persona para entender qué está pasando.",
+            "skills": {
+              "comunicacion": 3,
+              "inteligencia_emocional": 2
+            }
+          },
+          {
+            "id": "b",
+            "text": "Señalarlo frente a todo el equipo para que reaccione.",
+            "skills": {
+              "liderazgo": 1
+            }
+          },
+          {
+            "id": "c",
+            "text": "Redistribuir sus tareas entre los demás sin decirle nada.",
+            "skills": {
+              "organizacion": 2
+            }
+          },
+          {
+            "id": "d",
+            "text": "Esperar a ver si se resuelve solo.",
+            "skills": {}
+          }
+        ]
+      },
+      {
+        "id": "s6q2",
+        "context": "Debes entregar un proyecto en tres días y el plan original ya no es viable.",
+        "prompt": "¿Cómo reaccionas?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ajustas el plan con el equipo y redefines prioridades juntos.",
+            "skills": {
+              "adaptabilidad": 3,
+              "organizacion": 2
+            }
+          },
+          {
+            "id": "b",
+            "text": "Sigues con el plan original aunque ya no funcione.",
+            "skills": {}
+          },
+          {
+            "id": "c",
+            "text": "Tomas todas las decisiones solo, sin consultar al equipo.",
+            "skills": {
+              "liderazgo": 2
+            }
+          },
+          {
+            "id": "d",
+            "text": "Pides una prórroga sin proponer ningún ajuste.",
+            "skills": {
+              "comunicacion": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "s6q3",
+        "context": "Tienes una tarea importante que podrías delegar, pero crees que tú la harías más rápido.",
+        "prompt": "¿Qué decides?",
+        "options": [
+          {
+            "id": "a",
+            "text": "La delegas explicando el objetivo y brindando acompañamiento.",
+            "skills": {
+              "delegacion": 3,
+              "comunicacion": 1
+            }
+          },
+          {
+            "id": "b",
+            "text": "La haces tú mismo para no arriesgarte.",
+            "skills": {}
+          },
+          {
+            "id": "c",
+            "text": "La delegas sin dar ningún contexto.",
+            "skills": {
+              "delegacion": 1
+            }
+          },
+          {
+            "id": "d",
+            "text": "La dejas sin asignar hasta último momento.",
+            "skills": {}
+          }
+        ]
+      },
+      {
+        "id": "s6q4",
+        "context": "Durante una reunión, surge una idea poco convencional para resolver un problema recurrente del equipo.",
+        "prompt": "¿Cómo respondes?",
+        "options": [
+          {
+            "id": "a",
+            "text": "La descartas de inmediato por ser distinta a lo habitual.",
+            "skills": {}
+          },
+          {
+            "id": "b",
+            "text": "Exploras la idea con el equipo antes de decidir.",
+            "skills": {
+              "creatividad": 3,
+              "comunicacion": 1
+            }
+          },
+          {
+            "id": "c",
+            "text": "La adoptas sin analizarla, solo porque es novedosa.",
+            "skills": {
+              "creatividad": 1
+            }
+          },
+          {
+            "id": "d",
+            "text": "Ignoras a quien la propuso y sigues con la agenda.",
+            "skills": {}
+          }
+        ]
+      },
+      {
+        "id": "s6q5",
+        "context": "Un compañero comete un error que afecta a todo el equipo y se siente muy mal por eso.",
+        "prompt": "¿Qué haces?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Le haces sentir peor recalcando el error frente a otros.",
+            "skills": {}
+          },
+          {
+            "id": "b",
+            "text": "Lo apoyas, revisan juntos qué pasó y cómo evitarlo a futuro.",
+            "skills": {
+              "inteligencia_emocional": 3,
+              "resolucion_conflictos": 2
+            }
+          },
+          {
+            "id": "c",
+            "text": "Evitas el tema por completo para no incomodar.",
+            "skills": {}
+          },
+          {
+            "id": "d",
+            "text": "Le quitas todas sus responsabilidades sin conversarlo.",
+            "skills": {
+              "organizacion": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "s6q6",
+        "context": "Durante el foro de liderazgo, un asociado expresa una opinión muy distinta a la tuya.",
+        "prompt": "¿Cómo respondes?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Escuchas con atención, preguntas para entender y expones tu punto con respeto.",
+            "skills": {
+              "comunicacion": 3,
+              "inteligencia_emocional": 2
+            }
+          },
+          {
+            "id": "b",
+            "text": "Lo interrumpes para corregirlo de inmediato.",
+            "skills": {
+              "liderazgo": 1
+            }
+          },
+          {
+            "id": "c",
+            "text": "Te quedas callado aunque no estés de acuerdo.",
+            "skills": {
+              "comunicacion": 1
+            }
+          },
+          {
+            "id": "d",
+            "text": "Cambias de tema para evitar la discusión.",
+            "skills": {}
+          }
+        ]
+      }
+    ]
+  },
+  "normativa": {
+    "titulo": "Reto de normativa",
+    "preguntas": [
+      {
+        "id": "n1",
+        "context": "Un asociado conoce información interna del capítulo que aún no es pública y una persona externa se la pide.",
+        "prompt": "¿Qué es lo correcto?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Compartirla, porque no es un secreto",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "No compartirla sin autorización y remitir la solicitud a quien corresponda",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Compartirla solo con amigos cercanos",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Publicarla en redes para ser transparente",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": "n2",
+        "context": "Un director tiene un conflicto de interés: un proveedor que participa en una selección es su familiar.",
+        "prompt": "¿Qué debe hacer?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Decidir igualmente, confiando en su criterio",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Ocultar la relación para evitar problemas",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Declarar el conflicto de interés y abstenerse de decidir",
+            "correct": true
+          },
+          {
+            "id": "d",
+            "text": "Pedirle al proveedor que no se presente",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": "n3",
+        "context": "Un asociado se entera de que un compañero recibió un trato irrespetuoso durante una actividad.",
+        "prompt": "¿Cuál es la actitud adecuada?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Rechazar esa conducta y reportarla por los canales establecidos",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Comentarlo solo en conversaciones informales",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Ignorarlo para no generar conflictos",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Responder con el mismo trato",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": "n4",
+        "context": "Una persona quiere saber qué requisitos y deberes implica ser asociado.",
+        "prompt": "¿Dónde debe consultarlo?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Preguntarle a un amigo y asumir su respuesta",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Suponer que son iguales a los de otra organización",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "En el documento oficial de membresía vigente",
+            "correct": true
+          },
+          {
+            "id": "d",
+            "text": "No consultarlo hasta que surja un problema",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": "n5",
+        "context": "Un asociado no ha cumplido compromisos propios de su membresía.",
+        "prompt": "¿Cuál es el camino adecuado?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ignorar la situación",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Que un director lo sancione por decisión personal",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Retirarlo de los grupos de comunicación",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Revisar lo que establece la normativa de membresía y acordar un plan para ponerse al día",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "id": "n6",
+        "context": "Se discute por qué es importante conocer y aplicar el Código de ética en el capítulo.",
+        "prompt": "¿Cuál es la razón principal?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Solo aplica a la presidencia",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Orienta cómo actuamos y protege a las personas y la imagen de la asociación",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Es opcional y depende de cada asociado",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Reemplaza las decisiones de la Junta Capitular",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  "rol": {
+    "titulo": "Juego de roles — Director por un día",
+    "contexto_general": "Faltan tres semanas para un evento importante. El presupuesto disponible es limitado, dos integrantes del equipo no han cumplido sus responsabilidades y la participación de asociados ha disminuido.",
+    "preguntas": [
+      {
+        "id": "s7q1",
+        "prompt": "Decisión 1 — El presupuesto disponible es insuficiente. ¿Qué haces?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cancelas inmediatamente.",
+            "correct": false,
+            "skills": {
+              "gestion_recursos": -1
+            }
+          },
+          {
+            "id": "b",
+            "text": "Solicitas recursos sin analizar alternativas.",
+            "correct": false,
+            "skills": {
+              "gestion_recursos": 1
+            }
+          },
+          {
+            "id": "c",
+            "text": "Priorizas, revisas recursos y propones alternativas.",
+            "correct": true,
+            "skills": {
+              "gestion_recursos": 3,
+              "planeacion": 2
+            }
+          },
+          {
+            "id": "d",
+            "text": "Trasladas la responsabilidad a otra dirección.",
+            "correct": false,
+            "skills": {}
+          }
+        ]
+      },
+      {
+        "id": "s7q2",
+        "prompt": "Decisión 2 — Dos integrantes del equipo no han cumplido sus responsabilidades. ¿Qué haces?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Hablas con ellos, entiendes las causas y ajustas el plan.",
+            "correct": true,
+            "skills": {
+              "liderazgo": 3,
+              "comunicacion": 2
+            }
+          },
+          {
+            "id": "b",
+            "text": "Los reemplazas sin conversar con ellos.",
+            "correct": false,
+            "skills": {
+              "liderazgo": 1
+            }
+          },
+          {
+            "id": "c",
+            "text": "Asumes tú todas sus tareas.",
+            "correct": false,
+            "skills": {
+              "organizacion": 1
+            }
+          },
+          {
+            "id": "d",
+            "text": "No haces nada y esperas que se resuelva solo.",
+            "correct": false,
+            "skills": {}
+          }
+        ]
+      },
+      {
+        "id": "s7q3",
+        "prompt": "Decisión 3 — La participación de asociados ha disminuido a tres semanas del evento. ¿Qué haces?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cancelas la convocatoria de asociados.",
+            "correct": false,
+            "skills": {}
+          },
+          {
+            "id": "b",
+            "text": "Ajustas la estrategia de comunicación y motivación del evento.",
+            "correct": true,
+            "skills": {
+              "comunicacion": 3,
+              "planeacion": 1
+            }
+          },
+          {
+            "id": "c",
+            "text": "Obligas la asistencia sin explicar el propósito.",
+            "correct": false,
+            "skills": {
+              "liderazgo": 1
+            }
+          },
+          {
+            "id": "d",
+            "text": "Ignoras la baja participación y continúas igual.",
+            "correct": false,
+            "skills": {}
+          }
+        ]
+      },
+      {
+        "id": "s7q4",
+        "prompt": "Decisión 4 — Con menos tiempo del planeado, ¿cómo organizas al equipo?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Rehaces el cronograma priorizando lo crítico para el evento.",
+            "correct": true,
+            "skills": {
+              "planeacion": 3,
+              "organizacion": 2
+            }
+          },
+          {
+            "id": "b",
+            "text": "Mantienes el cronograma original sin ajustes.",
+            "correct": false,
+            "skills": {}
+          },
+          {
+            "id": "c",
+            "text": "Añades más reuniones sin reorganizar tareas.",
+            "correct": false,
+            "skills": {
+              "organizacion": 1
+            }
+          },
+          {
+            "id": "d",
+            "text": "Delegas todo sin dar seguimiento.",
+            "correct": false,
+            "skills": {
+              "delegacion": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "s7q5",
+        "prompt": "Decisión 5 — Faltando pocos días, ¿cómo comunicas el estado del evento a la Junta Capitular?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Presentas un informe claro con riesgos, avances y plan de contingencia.",
+            "correct": true,
+            "skills": {
+              "comunicacion": 3,
+              "planeacion": 2
+            }
+          },
+          {
+            "id": "b",
+            "text": "No informas nada hasta que el evento termine.",
+            "correct": false,
+            "skills": {}
+          },
+          {
+            "id": "c",
+            "text": "Solo mencionas lo que ha salido bien.",
+            "correct": false,
+            "skills": {
+              "comunicacion": 1
+            }
+          },
+          {
+            "id": "d",
+            "text": "Delegas el informe a otra persona sin revisarlo.",
+            "correct": false,
+            "skills": {
+              "delegacion": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

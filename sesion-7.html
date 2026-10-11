@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cierre · Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header id="app-header"></header>
+<main>
+<div class="container">
+<span class="session-number">Sesión 7 de 7 · Fase 3</span>
+<h1 class="page-title">Cierre</h1>
+<p class="page-lead">Integración · Juego de roles. Asume un cargo, toma decisiones bajo presión (hasta 600 puntos) y presenta tu visión de dirección (400 puntos).</p>
+<div class="card" id="stage-roles">
+<h2>Juego de roles — Director por un día</h2>
+<div id="cargo-pick">
+<p class="page-lead">Selecciona el cargo que vas a asumir durante el caso.</p>
+<div class="form-step"><select id="cargo-select">
+<option value="Presidencia">Presidencia</option><option value="Académico">Académico</option><option value="Comunicaciones">Comunicaciones</option>
+<option value="Desarrollo">Desarrollo</option><option value="Finanzas">Finanzas</option><option value="Mercadeo">Mercadeo</option>
+<option value="Proyectos">Proyectos</option><option value="Interventoría">Interventoría</option></select></div>
+</div>
+<div id="kahoot-container"></div>
+<div id="roles-resultado" style="margin-top:16px;"></div>
+</div>
+<form id="vision-form" hidden>
+<div class="card"><h2>Mi visión de dirección</h2><p class="page-lead">Construye tu propuesta personal. Al enviarla, generarás una página resumen que puedes descargar en PDF.</p></div>
+<div class="card form-step"><h2>1. Cargo o dirección de interés</h2>
+<select name="cargo" required><option value="">Selecciona una opción</option><option>Presidencia</option><option>Académico</option><option>Comunicaciones</option><option>Desarrollo</option><option>Finanzas</option><option>Mercadeo</option><option>Proyectos</option><option>Interventoría</option></select></div>
+<div class="card form-step"><h2>2. ¿Por qué quiero asumir este rol?</h2><textarea name="motivacion" rows="4" required maxlength="600"></textarea></div>
+<div class="card form-step"><h2>3. Diagnóstico</h2><label>¿Qué situación del capítulo considero que debería mejorar?</label><textarea name="diagnostico" rows="3" required maxlength="500"></textarea></div>
+<div class="card form-step"><h2>4. Objetivo</h2><label>¿Qué quiero lograr?</label><textarea name="objetivo" rows="3" required maxlength="400"></textarea></div>
+<div class="card form-step"><h2>5. Tres acciones prioritarias</h2><div id="acciones-container"></div></div>
+<div class="card form-step"><h2>6. Mi propuesta de valor</h2><label>¿Qué podría aportar yo al cargo?</label><textarea name="propuesta_valor" rows="3" required maxlength="400"></textarea></div>
+<div class="card form-step"><h2>7. Riesgos</h2><label>¿Cuáles serían los principales riesgos?</label><textarea name="riesgos" rows="3" required maxlength="400"></textarea></div>
+<div class="card form-step"><h2>8. Primeros 90 días</h2><div class="timeline-90">
+<div class="bloque"><h4>Día 1–30</h4><textarea name="dias_1_30" rows="3" required></textarea></div>
+<div class="bloque"><h4>Día 31–60</h4><textarea name="dias_31_60" rows="3" required></textarea></div>
+<div class="bloque"><h4>Día 61–90</h4><textarea name="dias_61_90" rows="3" required></textarea></div></div></div>
+<div class="card form-step"><h2>9. Reflexión final</h2><label>¿Qué tipo de director quiero llegar a ser?</label><textarea name="reflexion" rows="4" required maxlength="600"></textarea></div>
+<div class="card no-imprimir" style="text-align:right;"><button type="submit" class="btn-primary" style="width:auto;">Generar mi visión de dirección</button></div>
+</form>
+<div class="card" id="resumen-card" hidden>
+<h2>Mi visión de dirección</h2>
+<div id="resumen-container"></div>
+<div class="no-imprimir" style="text-align:right;margin-top:16px;display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;">
+<button type="button" class="btn-secondary" id="descargar-pdf" style="width:auto;">Descargar mi propuesta (PDF)</button></div>
+</div>
+<div class="card no-imprimir" id="stage-fin" hidden style="text-align:center;">
+<h2>Has completado la Escuela de Directores</h2>
+<p id="fin-puntos" class="page-lead"></p>
+<a href="ranking.html"><button type="button" class="btn-primary" style="width:auto;">Ver el ranking general</button></a>
+</div>
+</div>
+</main>
+<footer class="site-footer no-imprimir">Escuela de Directores — ANEIAP ICESI</footer>
+<script src="js/config.js"></script>
+<script src="js/sessions-meta.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/progress-helper.js"></script>
+<script src="js/points.js"></script>
+<script src="js/guard.js"></script>
+<script src="js/kahoot-engine.js"></script>
+<script src="js/sesion7.js"></script>
+</body>
+</html>

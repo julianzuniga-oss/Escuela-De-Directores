@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel administrativo — Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+<style>
+  .admin-input { width:100%; padding:10px; margin:4px 0 12px; border:1px solid #cfd6dd; border-radius:6px; font-size:1rem; }
+  .switch-row { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:12px 0; border-bottom:1px solid #eceef1; flex-wrap:wrap; }
+  .switch-row:last-child { border-bottom:none; }
+  .sw-btn { min-width:150px; padding:9px 16px; border-radius:6px; font-weight:600; cursor:pointer; border:1px solid; font-family:inherit; }
+  .sw-on { background:#e4f2e8; color:#2f7d4f; border-color:#2f7d4f; }
+  .sw-off { background:#eceef1; color:#6b7280; border-color:#b8bec6; }
+  .diag { font-size:.88rem; color:#6b7280; }
+  .diag code { background:#eef1f5; padding:1px 5px; border-radius:4px; }
+</style>
+</head>
+<body>
+<main>
+<div class="container" style="padding-top:32px;">
+  <h1 class="page-title">Panel administrativo</h1>
+  <p class="page-lead">Acceso restringido — Escuela de Directores, ANEIAP ICESI.</p>
+
+  <div class="card" id="login-card">
+    <h2>Iniciar sesión de administrador</h2>
+    <form id="admin-login-form">
+      <label for="admin-email">Correo del administrador</label>
+      <input class="admin-input" type="email" id="admin-email" required autocomplete="username">
+      <label for="admin-password">Contraseña</label>
+      <input class="admin-input" type="password" id="admin-password" required autocomplete="current-password">
+      <button type="submit" class="btn-primary" style="width:auto;">Ingresar</button>
+    </form>
+    <div class="login-error" id="admin-error" style="margin-top:12px;"></div>
+    <details class="diag" style="margin-top:14px;">
+      <summary>¿No puedes ingresar? Revisa esto</summary>
+      <ol>
+        <li>Este usuario NO es tu cuenta de Supabase: se crea en <b>Authentication → Users → Add user → Create new user</b> (con la opción <b>Auto Confirm User</b> marcada).</li>
+        <li>El correo debe ser <b>exactamente</b> el mismo que pusiste en <code>supabase-migracion-v2.sql</code>.</li>
+        <li><code>js/config.js</code> debe tener tu URL y tu clave anon reales.</li>
+        <li>Abre este panel desde la dirección publicada (<code>https://tuusuario.github.io/tu-repo/admin.html</code>).</li>
+      </ol>
+    </details>
+  </div>
+
+  <div id="admin-panel" hidden>
+    <div class="card" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+      <div><h2 style="margin-bottom:0;">Centro de la Escuela</h2><p class="page-lead" style="margin-bottom:0;" id="admin-user"></p></div>
+      <button type="button" class="btn-secondary" id="admin-logout">Cerrar sesión</button>
+    </div>
+
+    <div class="card">
+      <h2>Habilitar sesiones</h2>
+      <p class="page-lead">Los asociados solo pueden entrar a las sesiones habilitadas. Activa cada una el día que corresponda.</p>
+      <div id="sessions-switches"></div>
+      <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;">
+        <button type="button" class="btn-secondary" id="unlock-all">Habilitar todas</button>
+        <button type="button" class="btn-secondary" id="lock-all">Bloquear todas</button>
+      </div>
+      <div class="switch-row" style="margin-top:14px;border-top:1px solid #eceef1;border-bottom:none;">
+        <span><b>Cerrar la Escuela y declarar ganador</b><br><span class="diag">Cambia el ranking de "Líder actual" a "Ganador de la Escuela".</span></span>
+        <button type="button" class="sw-btn sw-off" id="close-switch">Escuela abierta</button>
+      </div>
+    </div>
+
+    <div class="card"><h2>Resumen general</h2><div id="resumen-general"></div></div>
+
+    <div class="card">
+      <h2>Ranking general</h2>
+      <table class="ranking-table"><thead id="admin-rank-head"></thead><tbody id="admin-rank-body"></tbody></table>
+      <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">
+        <button type="button" class="btn-secondary" id="export-ranking">Exportar ranking (CSV)</button>
+        <a href="ranking.html?proyeccion=1" target="_blank"><button type="button" class="btn-secondary">Abrir modo proyección</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Participantes</h2>
+      <table class="ranking-table"><thead><tr><th>Nombre</th><th>Ingreso</th><th>Última actividad</th><th>Sesiones completadas</th></tr></thead><tbody id="participants-body"></tbody></table>
+    </div>
+
+    <div class="card">
+      <h2>Contenido editable</h2>
+      <p class="page-lead">Preguntas y casos: <code>data/preguntas.json</code> · Logos y colores: <code>data/logos.json</code> y carpeta <code>assets/logos/</code> · Elementos de referencia de la estructura: <code>data/estructura_referencia.json</code> · Nombres de sesiones: <code>js/sessions-meta.js</code>.</p>
+    </div>
+  </div>
+</div>
+</main>
+<script src="js/config.js"></script>
+<script src="js/sessions-meta.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/points.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

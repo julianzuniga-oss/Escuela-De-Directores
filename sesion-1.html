@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apertura y bienvenida · Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header id="app-header"></header>
+<main>
+<div class="container">
+<span class="session-number">Sesión 1 de 7 · Fase 1</span>
+<h1 class="page-title">Apertura y bienvenida</h1>
+<p class="page-lead">Historia ANEIAP e historia seccional · Capacitación de bienvenida · Presentación de herramientas. Actividad: construye tu mapa de expectativas.</p>
+<div class="card">
+<h2>Mi mapa de expectativas</h2>
+<p class="page-lead">Tienes un lienzo en blanco. Agrega rectángulos, círculos y textos, únelos con conectores y usa colores para representar lo que esperas de la Escuela y del rol de director: liderazgo, equipo, decisiones, comunicación, resultados, desarrollo personal. No hay una forma correcta: organízalo como lo piensas tú. Tu trabajo se guarda automáticamente.</p>
+<div id="lienzo"></div>
+<div class="ce-statusbar"><span id="save-status">Listo</span><button type="button" class="btn-secondary" id="guardar-ahora">Guardar ahora</button></div>
+</div>
+<div class="card">
+<h2>Mapa colectivo de expectativas</h2>
+<p class="page-lead">Consulta, en modo lectura, los mapas construidos por los demás asociados.</p>
+<div id="lista-colectiva"></div>
+<div id="mapa-colectivo-detalle" style="margin-top:16px;"></div>
+</div>
+<div class="card" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;">
+<span id="puntos-info" class="page-lead" style="margin:0;"></span>
+<button type="button" class="btn-primary" id="finalizar-btn" style="width:auto;">Finalizar Sesión 1</button>
+</div>
+</div>
+</main>
+<footer class="site-footer no-imprimir">Escuela de Directores — ANEIAP ICESI</footer>
+<script src="js/config.js"></script>
+<script src="js/sessions-meta.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/progress-helper.js"></script>
+<script src="js/points.js"></script>
+<script src="js/guard.js"></script>
+<script src="js/canvas-editor.js"></script>
+<script src="js/sesion1.js"></script>
+</body>
+</html>

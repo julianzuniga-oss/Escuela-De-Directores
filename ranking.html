@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ranking general · Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header id="app-header"></header>
+<button type="button" class="btn-secondary proy-exit" id="proy-exit">Salir de proyección</button>
+<main>
+<div class="container">
+<h1 class="page-title">Ranking general de la Escuela</h1>
+<p class="page-lead">Suma de los puntos obtenidos en las 7 sesiones. Se actualiza automáticamente.</p>
+<div id="banner"></div>
+<div class="card">
+<div class="no-proyeccion" style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
+<span class="page-lead" id="actualizado" style="margin:0;"></span>
+<button type="button" class="btn-secondary" id="proy-btn">Modo proyección</button></div>
+<table class="ranking-table">
+<thead id="rank-head"></thead>
+<tbody id="rank-body"></tbody>
+</table>
+</div>
+</div>
+</main>
+<footer class="site-footer">Escuela de Directores — ANEIAP ICESI</footer>
+<script src="js/config.js"></script>
+<script src="js/sessions-meta.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/points.js"></script>
+<script src="js/ranking.js"></script>
+</body>
+</html>

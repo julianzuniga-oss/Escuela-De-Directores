@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foro de liderazgo y habilidades blandas · Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header id="app-header"></header>
+<main>
+<div class="container">
+<span class="session-number">Sesión 4 de 7 · Fase 2</span>
+<h1 class="page-title">Foro de liderazgo y habilidades blandas</h1>
+<p class="page-lead">Foro de liderazgo. Actividad: reto de habilidades blandas (hasta 700 puntos) y reflexión del foro (300 puntos).</p>
+<div class="card" id="stage-kahoot" hidden>
+<h2>Reto de habilidades blandas</h2>
+<p class="page-lead">Cada situación mide una combinación de habilidades. Gana más puntos con las decisiones más asertivas y respondiendo con rapidez.</p>
+<div id="kahoot-container"></div>
+</div>
+<div class="card" id="stage-perfil" hidden>
+<h2>Mi perfil de habilidades</h2>
+<div id="perfil-container"></div>
+<div id="fortalezas-container" style="margin-top:14px;"></div>
+</div>
+<div class="card" id="stage-reflexion" hidden>
+<h2>Reflexión del foro de liderazgo</h2>
+<form id="reflexion-form" class="form-step">
+<label for="aprendizaje">¿Qué aprendiste del foro de liderazgo?</label>
+<textarea id="aprendizaje" rows="4" required minlength="30" maxlength="800"></textarea>
+<label for="compromiso">¿Qué compromiso de liderazgo asumes a partir de hoy?</label>
+<textarea id="compromiso" rows="3" required minlength="20" maxlength="600"></textarea>
+<button type="submit" class="btn-primary" style="width:auto;">Enviar reflexión</button>
+</form>
+</div>
+<div class="card" id="stage-fin" hidden style="text-align:center;">
+<h2>Sesión 4 completada</h2>
+<p id="fin-puntos" class="page-lead"></p>
+<a href="dashboard.html"><button type="button" class="btn-primary" style="width:auto;">Volver al dashboard</button></a>
+</div>
+</div>
+</main>
+<footer class="site-footer no-imprimir">Escuela de Directores — ANEIAP ICESI</footer>
+<script src="js/config.js"></script>
+<script src="js/sessions-meta.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/progress-helper.js"></script>
+<script src="js/points.js"></script>
+<script src="js/guard.js"></script>
+<script src="js/kahoot-engine.js"></script>
+<script src="js/sesion4.js"></script>
+</body>
+</html>
