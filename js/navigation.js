@@ -24,7 +24,7 @@ function renderHeader(activeFile) {
         <span class="brand-mark" aria-hidden="true">ED</span>
         <div class="brand-text">
           <span class="brand-title">Escuela de Directores</span>
-          <span class="brand-subtitle">ANEIAP ICESI</span>
+          <span class="brand-subtitle">ANEIAP</span>
         </div>
       </div>
 
