@@ -8,8 +8,8 @@
  */
 
 const APP_CONFIG = {
-  SUPABASE_URL: "TU_SUPABASE_URL_AQUI",
-  SUPABASE_ANON_KEY: "TU_SUPABASE_ANON_KEY_AQUI",
+  SUPABASE_URL: "https://bofztbwqdezwedabhwqc.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable_po5ff3inTXJc_60XbLv_ew_h2dKr7Gs",
 
   APP_NAME: "Escuela de Directores",
   ORG_NAME: "ANEIAP ICESI",
