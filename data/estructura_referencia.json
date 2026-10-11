@@ -2,7 +2,7 @@
   "elementos": [
     { "id": "presidencia", "nombre": "Presidencia", "claves": ["presidencia", "presidente"] },
     { "id": "interventoria", "nombre": "Interventoría", "claves": ["interventor"] },
-    { "id": "academica", "nombre": "Dirección Académica", "claves": ["académ", "academ"] },
+    { "id": "academica", "nombre": "Dirección Académico", "claves": ["académ", "academ"] },
     { "id": "comunicaciones", "nombre": "Dirección de Comunicaciones", "claves": ["comunic"] },
     { "id": "desarrollo", "nombre": "Dirección de Desarrollo", "claves": ["desarrollo"] },
     { "id": "finanzas", "nombre": "Dirección de Finanzas", "claves": ["finanz"] },
