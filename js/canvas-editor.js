@@ -95,7 +95,7 @@
             this.logos.map(function (l) {
               return '<button type="button" class="ce-logo-chip" data-logo="' + esc(l.id) + '">' +
                 '<span class="ce-chip-mark" style="background:' + esc(l.color) + '">' +
-                (l.archivo ? '<img src="assets/logos/' + esc(l.archivo) + '" alt="">' : esc(l.sigla)) +
+                (l.archivo ? '<img src="assets/logos/' + esc(l.archivo) + '" alt="" data-s="' + esc(l.sigla) + '" onerror="this.parentNode.textContent=this.dataset.s">' : esc(l.sigla)) +
                 '</span>' + esc(l.nombre) + '</button>';
             }).join('') + '</div>';
           r.appendChild(lg);
