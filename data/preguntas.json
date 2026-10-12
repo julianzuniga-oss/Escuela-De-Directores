@@ -20,7 +20,7 @@
           },
           {
             "id": "c",
-            "text": "Dirección Académica",
+            "text": "Dirección de Académico",
             "correct": true
           },
           {
@@ -37,7 +37,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Dirección Académica",
+            "text": "Dirección de Académico",
             "correct": false
           },
           {
@@ -74,7 +74,7 @@
           },
           {
             "id": "c",
-            "text": "Dirección Académica",
+            "text": "Dirección de Académico",
             "correct": false
           },
           {
@@ -106,7 +106,7 @@
           },
           {
             "id": "d",
-            "text": "Dirección Académica",
+            "text": "Dirección de Académico",
             "correct": false
           }
         ]
@@ -182,7 +182,7 @@
           },
           {
             "id": "b",
-            "text": "Dirección Académica",
+            "text": "Dirección de Académico",
             "correct": false
           },
           {
@@ -268,7 +268,7 @@
           },
           {
             "id": "c",
-            "text": "Dirección Académica",
+            "text": "Dirección de Académico",
             "correct": false
           },
           {
@@ -285,7 +285,7 @@
         "options": [
           {
             "id": "a",
-            "text": "Dirección Académica",
+            "text": "Dirección de Académico",
             "correct": false
           },
           {
