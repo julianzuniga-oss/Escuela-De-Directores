@@ -2,7 +2,7 @@
   "logos": [
     { "id": "presidencia", "nombre": "Presidencia", "sigla": "PR", "color": "#1a3c6e", "archivo": "presidencia.png" },
     { "id": "interventoria", "nombre": "Interventoría", "sigla": "IN", "color": "#6d597a", "archivo": "interventoria.png" },
-    { "id": "academica", "nombre": "Dirección Académica", "sigla": "AC", "color": "#2f7d4f", "archivo": "academica.png" },
+    { "id": "academica", "nombre": "Dirección de Académico", "sigla": "AC", "color": "#2f7d4f", "archivo": "academica.png" },
     { "id": "comunicaciones", "nombre": "Dirección de Comunicaciones", "sigla": "CO", "color": "#b08d2b", "archivo": "comunicaciones.png" },
     { "id": "desarrollo", "nombre": "Dirección de Desarrollo", "sigla": "DE", "color": "#a3441f", "archivo": "desarrollo.png" },
     { "id": "finanzas", "nombre": "Dirección de Finanzas", "sigla": "FI", "color": "#0b7285", "archivo": "finanzas.png" },
