@@ -3,66 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Escuela de Directores</title>
+<title>Escuela de Directores — ANEIAP</title>
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body class="auth-body">
+<div class="auth-page">
+  <section class="auth-hero">
+    <div class="auth-hero-inner">
+      <span class="eyebrow">Univalle · USC · ICESI</span>
+      <h1>ESCUELA DE<br><span class="grad">DIRECTORES</span></h1>
+      <p class="hero-sub">Formación, liderazgo y visión para quienes quieren transformar la asociación.</p>
+      <div class="hero-stats">
+        <div><b>7</b><span>capacitaciones</span></div>
+        <div><b>7000</b><span>puntos en juego</span></div>
+        <div><b>1</b><span>ganador</span></div>
+      </div>
+    </div>
+  </section>
 
-<div class="login-page">
-  <div class="login-card">
-    <div class="brand-mark" style="margin:0 auto 18px;">ED</div>
-    <h1 class="login-title">Escuela de Directores</h1>
-    <div class="login-org">ANEIAP</div>
-    <p class="login-subtitle">Formación, liderazgo y visión para quienes quieren transformar la asociación.</p>
+  <section class="auth-panel">
+    <div class="auth-card">
+      <div class="auth-brand"><span class="brand-mark" aria-hidden="true">ED</span><span>Escuela de Directores</span></div>
+      <p class="auth-note" id="mode-note" hidden>Modo de pruebas: Supabase no está configurado, los datos solo se guardan en este navegador.</p>
 
-    <h2 style="font-size:1.05rem; margin-bottom:14px;">Ingresa a la escuela</h2>
-    <form class="login-form" id="login-form" novalidate>
-      <label for="fullname">Nombre completo</label>
-      <input type="text" id="fullname" name="fullname" autocomplete="name" placeholder="Escribe tu nombre completo" required>
-      <div class="login-error" id="login-error"></div>
-      <button type="submit" class="btn-primary">Ingresar</button>
-    </form>
-  </div>
+      <div class="auth-tabs" id="auth-tabs">
+        <button type="button" id="tab-login" class="active">Ingresar</button>
+        <button type="button" id="tab-register">Crear cuenta</button>
+      </div>
+
+      <form id="form-login" novalidate>
+        <div class="field"><label for="login-email">Correo</label><input type="email" id="login-email" autocomplete="username" placeholder="tucorreo@aneiap.org" required></div>
+        <div class="field"><label for="login-pass">Contraseña</label><input type="password" id="login-pass" autocomplete="current-password" required></div>
+        <button type="submit" class="btn-primary">Ingresar</button>
+        <button type="button" class="link-btn" id="go-forgot">¿Olvidaste tu contraseña?</button>
+      </form>
+
+      <form id="form-register" hidden novalidate>
+        <div class="field"><label for="reg-name">Nombre completo</label><input type="text" id="reg-name" autocomplete="name" required></div>
+        <div class="field"><label for="reg-chapter">Capítulo</label><select id="reg-chapter" required></select></div>
+        <div class="field"><label for="reg-email">Correo ANEIAP</label><input type="email" id="reg-email" autocomplete="email" required></div>
+        <div class="field"><label for="reg-pass">Contraseña (mínimo 8 caracteres)</label><input type="password" id="reg-pass" autocomplete="new-password" required></div>
+        <div class="field"><label for="reg-pass2">Repite la contraseña</label><input type="password" id="reg-pass2" autocomplete="new-password" required></div>
+        <button type="submit" class="btn-primary">Crear mi cuenta</button>
+      </form>
+
+      <form id="form-forgot" hidden novalidate>
+        <h2 class="auth-h2">Recuperar contraseña</h2>
+        <p class="auth-note">Escribe tu correo y te enviaremos un enlace para crear una nueva contraseña.</p>
+        <div class="field"><label for="forgot-email">Correo</label><input type="email" id="forgot-email" required></div>
+        <button type="submit" class="btn-primary">Enviar enlace</button>
+        <button type="button" class="link-btn" id="back-login">Volver a ingresar</button>
+      </form>
+
+      <div class="auth-msg" id="auth-msg" role="status" aria-live="polite"></div>
+    </div>
+  </section>
 </div>
-
 <script src="js/config.js"></script>
+<script src="js/app-settings.js"></script>
 <script src="js/sessions-meta.js"></script>
 <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 <script src="js/database.js"></script>
 <script src="js/auth.js"></script>
-<script>
-  // Si ya hay una sesión activa, ir directo al dashboard
-  if (Auth.getCurrentParticipant()) {
-    window.location.href = "dashboard.html";
-  }
-
-  const form = document.getElementById("login-form");
-  const errorEl = document.getElementById("login-error");
-
-  form.addEventListener("submit", async (ev) => {
-    ev.preventDefault();
-    errorEl.textContent = "";
-    const name = document.getElementById("fullname").value;
-
-    if (!Auth.isValidName(name)) {
-      errorEl.textContent = "Por favor ingresa tu nombre completo (mínimo 3 caracteres).";
-      return;
-    }
-
-    const btn = form.querySelector("button[type=submit]");
-    btn.disabled = true;
-    btn.textContent = "Ingresando…";
-
-    try {
-      await Auth.loginWithName(name);
-      window.location.href = "dashboard.html";
-    } catch (e) {
-      errorEl.textContent = "No fue posible ingresar. Intenta nuevamente.";
-      btn.disabled = false;
-      btn.textContent = "Ingresar";
-    }
-  });
-</script>
+<script src="js/login.js"></script>
 </body>
 </html>
