@@ -83,7 +83,7 @@ async function buildRanking() {
     const bySession = {};
     mine.forEach((s) => (bySession[s.session_number] = s.points));
     return {
-      id: p.id, name: p.name, bySession,
+      id: p.id, name: p.name, chapter: p.chapter || "", bySession,
       total: mine.reduce((a, s) => a + (s.points || 0), 0),
       done: mine.filter((s) => s.completed).length
     };
