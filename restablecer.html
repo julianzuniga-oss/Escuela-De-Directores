@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nueva contraseña — Escuela de Directores</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="auth-body">
+<div class="auth-page single">
+  <section class="auth-panel">
+    <div class="auth-card">
+      <div class="auth-brand"><span class="brand-mark" aria-hidden="true">ED</span><span>Escuela de Directores</span></div>
+      <h2 class="auth-h2">Crea tu nueva contraseña</h2>
+      <p class="auth-note" id="wait">Validando el enlace…</p>
+      <form id="form-new" hidden novalidate>
+        <div class="field"><label for="new-pass">Nueva contraseña (mínimo 8 caracteres)</label><input type="password" id="new-pass" autocomplete="new-password" required></div>
+        <div class="field"><label for="new-pass2">Repite la contraseña</label><input type="password" id="new-pass2" autocomplete="new-password" required></div>
+        <button type="submit" class="btn-primary">Guardar contraseña</button>
+      </form>
+      <div class="auth-msg" id="auth-msg" role="status" aria-live="polite"></div>
+      <a class="link-btn" href="index.html">Volver al inicio</a>
+    </div>
+  </section>
+</div>
+<script src="js/config.js"></script>
+<script src="js/sessions-meta.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="js/database.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/restablecer.js"></script>
+</body>
+</html>
