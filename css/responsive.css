@@ -74,3 +74,28 @@
   .col-ses { display: none; }
   .ce-toolbar button { flex: 1 1 auto; }
 }
+
+/* v3 — encabezado oscuro y nuevos bloques */
+.main-nav { background: #0a1230; border-bottom-color: rgba(255,255,255,.1); }
+.main-nav a { color: #dbe4ff; border-bottom-color: rgba(255,255,255,.08); }
+@media (max-width: 899px) {
+  .auth-page { grid-template-columns: 1fr; }
+  .auth-hero { padding: 40px 24px 36px; }
+  .auth-hero h1 { font-size: 2.6rem; letter-spacing: -1px; }
+  .hero-sub { font-size: 1rem; }
+  .hero-stats { gap: 22px; margin-top: 22px; }
+  .hero-stats b { font-size: 1.8rem; }
+}
+@media (max-width: 767px) {
+  main::before { height: 400px; }
+  .stats-row { grid-template-columns: 1fr; }
+  .podium { grid-template-columns: 1fr; }
+  .pod.p1, .pod.p2, .pod.p3 { min-height: 0; flex-direction: row; align-items: center; justify-content: flex-start; gap: 14px; text-align: left; padding: 14px 18px; border-radius: 16px; }
+  .pod .pn { font-size: 2rem; }
+  .auth-card { padding: 26px 20px; }
+}
+@media (min-width: 768px) {
+  .main-nav { background: transparent; }
+  .main-nav a { border-bottom: 2px solid transparent; }
+  .main-nav a.active { border-bottom-color: var(--oro); }
+}
