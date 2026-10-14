@@ -74,5 +74,5 @@ create policy "ajustes lectura" on session_settings for select using (true);
 -- ...pero SOLO el administrador puede cambiarlas.
 drop policy if exists "admin escribe ajustes" on session_settings;
 create policy "admin escribe ajustes" on session_settings for all to authenticated
-  using ((auth.jwt() ->> 'email') = 'TU_CORREO_ADMIN@ejemplo.com')
-  with check ((auth.jwt() ->> 'email') = 'TU_CORREO_ADMIN@ejemplo.com');
+  using ((auth.jwt() ->> 'email') = 'julian.zuniga.aguirre@gmail.com')
+  with check ((auth.jwt() ->> 'email') = 'julian.zuniga.aguirre@gmail.com');
