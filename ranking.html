@@ -13,21 +13,20 @@
 <button type="button" class="btn-secondary proy-exit" id="proy-exit">Salir de proyección</button>
 <main>
 <div class="container">
-<h1 class="page-title">Ranking general de la Escuela</h1>
-<p class="page-lead">Suma de los puntos obtenidos en las 7 sesiones. Se actualiza automáticamente.</p>
+<h1 class="page-title">Ranking general</h1>
+<p class="page-lead">Suma de los puntos de las 7 sesiones. Se actualiza automáticamente.</p>
 <div id="banner"></div>
+<div class="podium" id="podium"></div>
+<div class="chapter-row" id="chapters"></div>
 <div class="card">
 <div class="no-proyeccion" style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
 <span class="page-lead" id="actualizado" style="margin:0;"></span>
 <button type="button" class="btn-secondary" id="proy-btn">Modo proyección</button></div>
-<table class="ranking-table">
-<thead id="rank-head"></thead>
-<tbody id="rank-body"></tbody>
-</table>
+<table class="ranking-table"><thead id="rank-head"></thead><tbody id="rank-body"></tbody></table>
 </div>
 </div>
 </main>
-<footer class="site-footer">Escuela de Directores — ANEIAP ICESI</footer>
+<footer class="site-footer">Escuela de Directores — ANEIAP</footer>
 <script src="js/config.js"></script>
 <script src="js/sessions-meta.js"></script>
 <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
